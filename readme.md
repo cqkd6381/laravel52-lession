@@ -10,18 +10,19 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## 路由模型绑定
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Laravel 路由模型绑定提供了一个方便的方式来注入类实例到你的路由中.例如，除了注入一个用户的 ID，你也可以注入与指定 ID 相符的完整 User 类实例. [Laravel website](http://d.laravel-china.org/docs/5.2/routing#route-model-binding).
 
-## Contributing
+## 访问次数限制
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Laravel 内置的 AuthController 类提供 Illuminate\Foundation\Auth\ThrottlesLogins trait 允许你在应用程序中限制登录次数.默认情况下，如果用户在进行几次尝试后仍不能提供正确的凭证，将在一分钟内无法进行登录.这个限制会特别针对用户的用户名称 / 邮件地址和他们的 IP 地址. [Laravel documentation](http://d.laravel-china.org/docs/5.2/authentication#authentication-throttling).
 
-## Security Vulnerabilities
+## 更简洁快速的实现登录注册
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Laravel 通过运行如下命令可快速生成认证所需要的路由和视图：php artisan make:auth
+[Laravel authentication](http://d.laravel-china.org/docs/5.2/authentication#路由)
 
-## License
+## 多表认证登录（前后台分离）
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+前台使用user表，后台使用admin表.
