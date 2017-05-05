@@ -12,11 +12,11 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 ## 路由模型绑定
 
-Laravel 路由模型绑定提供了一个方便的方式来注入类实例到你的路由中.例如，除了注入一个用户的 ID，你也可以注入与指定 ID 相符的完整 User 类实例. [Laravel website](http://d.laravel-china.org/docs/5.2/routing#route-model-binding).
+Laravel 路由模型绑定提供了一个方便的方式来注入类实例到你的路由中.例如，除了注入一个用户的 ID，你也可以注入与指定 ID 相符的完整 User 类实例. [Laravel routing](http://d.laravel-china.org/docs/5.2/routing#route-model-binding).
 
 ## 访问次数限制
 
-Laravel 内置的 AuthController 类提供 Illuminate\Foundation\Auth\ThrottlesLogins trait 允许你在应用程序中限制登录次数.默认情况下，如果用户在进行几次尝试后仍不能提供正确的凭证，将在一分钟内无法进行登录.这个限制会特别针对用户的用户名称 / 邮件地址和他们的 IP 地址. [Laravel documentation](http://d.laravel-china.org/docs/5.2/authentication#authentication-throttling).
+Laravel 内置的 AuthController 类提供 Illuminate\Foundation\Auth\ThrottlesLogins trait 允许你在应用程序中限制登录次数.默认情况下，如果用户在进行几次尝试后仍不能提供正确的凭证，将在一分钟内无法进行登录.这个限制会特别针对用户的用户名称 / 邮件地址和他们的 IP 地址. [Laravel authentication-throttling](http://d.laravel-china.org/docs/5.2/authentication#authentication-throttling).
 
 ## 更简洁快速的实现登录注册
 
